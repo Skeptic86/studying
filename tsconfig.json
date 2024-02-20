@@ -1,26 +1,26 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/",
-    // Не позволяет использовать переменные без указания типа
-    "noImplicitAny": true,
-    "module": "ESNext",
-    // В какую спецификацию компилировать
-    "target": "es5",
-    "jsx": "react-jsx",
-    // компилятор компилирует не только ts, но и js
-    "allowJs": true,
-    "moduleResolution": "node",
-    // esModuleInterpop позволяет работать с пакетами которые используют
-    // common js как с обычными пакетами с помощью import (require() module.export) = common js
-    "esModuleInterop": true,
-    // Если какая-либо библиотека  не имеет default import
-    // лоадеры вроде ts-loader или babel-loader автоматически создает их
-    // import path from 'path' вместо import * as path from 'path'
-    "allowSyntheticDefaultImports": true
-  },
-  "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+        "outDir": "./dist/",
+        // Не позволяет использовать переменные без указания типа
+        "noImplicitAny": true,
+        "module": "ESNext",
+        // В какую спецификацию компилировать
+        "target": "es5",
+        "jsx": "react-jsx",
+        // компилятор компилирует не только ts, но и js
+        "allowJs": true,
+        "moduleResolution": "node",
+        // esModuleInterpop позволяет работать с пакетами которые используют
+        // common js как с обычными пакетами с помощью import (require() module.export) = common js
+        "esModuleInterop": true,
+        // Если какая-либо библиотека  не имеет default import
+        // лоадеры вроде ts-loader или babel-loader автоматически создает их
+        // import path from 'path' вместо import * as path from 'path'
+        "allowSyntheticDefaultImports": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
     }
-  }
 }
