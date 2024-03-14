@@ -10,6 +10,10 @@
         // компилятор компилирует не только ts, но и js
         "allowJs": true,
         "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./src/*"]
+        },
         // esModuleInterpop позволяет работать с пакетами которые используют
         // common js как с обычными пакетами с помощью import (require() module.export) = common js
         "esModuleInterop": true,
