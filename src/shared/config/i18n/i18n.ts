@@ -7,8 +7,9 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // have a look at the Quick start guide
 // for passing in lng and translations on init
 
-i18n.use(Backend)
-    .use(LanguageDetector)
+i18n
+    // .use(Backend)
+    // .use(LanguageDetector)
     // pass the i18n instance to react-i18next.
     .use(initReactI18next)
     .init({
